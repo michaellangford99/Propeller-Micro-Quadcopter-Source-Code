@@ -1,1 +1,2 @@
-# Propeller Micro Quadcopter Source Code
+# Propeller-Micro-Quadcopter-Source-Code
+Quadcopter flight controller software for Parallax Propeller chip - software to be uploaded soon....
