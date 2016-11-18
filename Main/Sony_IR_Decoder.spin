@@ -7,7 +7,7 @@ VAR
      long message                    ' Inteteger created from the five bits
 
 PUB GetMessage(pin)
-  repeat
+  'repeat
     Pulse[0] := (RCTIME(pin, 0))/2         
     if (Pulse[0] > 975) and (Pulse[0] < 1425)
 
@@ -35,7 +35,7 @@ PUB GetMessage(pin)
             message := 0                   
 
         return message                            
-    
+    return -1
 PUB RCTIME (Pin,State):Duration | ClkStart, ClkStop
 {{
    Reads RCTime on Pin starting at State, returns discharge time, returns in 1uS units
